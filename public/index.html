@@ -3,35 +3,95 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="author" content="Ольга Филимонова">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="../src/index.css>"/>
     <meta
       name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+      content="Web site created using create-react-app"/>
+    <title>Spotify</title>
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <body class="body">
+    <header>
+      <div class="head">
+        <p class="login">
+          <img class="login_img" src="img/Spotify.png" alt="login_spotify" />
+          <p class="login_txt">Login</p>
+        </p>
+      </div>
+    </header>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <main class="parent">
+      <aside class="sidebar">
+              <img class="logo" src="img/logo.png" alt="Logo_Spotify" onclick="window.location.href = 'index.html'">
+          <br>
+            <ul class="ul_bar">
+              <li class="list" onclick="window.location.href = 'index.html'"><svg  role="img" height="20" width="22" viewBox="0 0 20 22" class="svg_li"><path d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z"></path></svg>
+            Главная</li>
+          <br>
+              <li class="list"><svg role="img" height="20" width="22" viewBox="0 0 20 22" class="svg_li"><path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path></svg>
+                 Поиск</li>
+          <br>
+              <li class="list"><svg role="img" height="20" width="22" viewBox="0 0 20 22" class="svg_li"><path d="M14.5 2.134a1 1 0 011 0l6 3.464a1 1 0 01.5.866V21a1 1 0 01-1 1h-6a1 1 0 01-1-1V3a1 1 0 01.5-.866zM16 4.732V20h4V7.041l-4-2.309zM3 22a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1zm6 0a1 1 0 01-1-1V3a1 1 0 012 0v18a1 1 0 01-1 1z"></path></svg>
+            Моя медиатека</li>  
+          <br>
+          <br>
+          <br>
+              <li class="list"><svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" class="svg_li"><path d="M15.25 8a.75.75 0 01-.75.75H8.75v5.75a.75.75 0 01-1.5 0V8.75H1.5a.75.75 0 010-1.5h5.75V1.5a.75.75 0 011.5 0v5.75h5.75a.75.75 0 01.75.75z"></path></svg>
+            Создать плейлист</li>
+          <br>
+              <li class="list"><svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" class="svg_li"><path d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"></path></svg>
+            Любимые треки</li>
+            </ul>
+            <hr class="hr-line">
+      </aside> 
+
+      <div class="main_side">
+        <div class="headings">
+          <h2>Выбор редакции</h2>
+            <div class="widget">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1cV2HrhbAAlW4F348o8Bxm?utm_source=generator" 
+                width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+              </iframe>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZEVXbNALwC1jxb5m?utm_source=generator" 
+                width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+              </iframe>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0skU3bkFwP0sFmUIb03q82?utm_source=generator" 
+                width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+              </iframe>
+            </div>
+        </div>
+      <div class="headings"><h2>В тренде</h2>
+        <div class="widget">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1P6SeYoLzFyj0tBhSxK3t1?utm_source=generator" 
+              width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/0h0vPJcfsfRO7U3c2Astye?utm_source=generator" 
+              width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/2igtm1MhKEpmG3PzToJT40?utm_source=generator" 
+              width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+            </iframe>
+          </div>
+      </div>
+      <div class="headings"><h2>Только новинки</h2>
+          <div class="widget">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0iWCupAJreesWuLo9wkpXt?utm_source=generator" 
+                width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+              </iframe>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/2MjE1xXSjJQVbqOusXdRQI?utm_source=generator" 
+                width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+              </iframe>
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/63xCQmfD4SELvgkR4pWQl7?utm_source=generator&theme=0" 
+                width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+              </iframe>
+          </div>
+        </div> 
+      </div>
+    </main>
+    <footer class="foot">
+    </footer>
   </body>
 </html>
